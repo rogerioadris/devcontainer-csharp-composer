@@ -1,0 +1,36 @@
+{
+    "name": "Clean Architecture",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "application",
+    "workspaceFolder": "/workspace",
+    "shutdownAction": "stopCompose",
+    "extensions": [
+        "ms-dotnettools.csharp",
+        "ms-vscode.atom-keybindings",
+        "jchannon.csharpextensions",
+        "jmrog.vscode-nuget-package-manager",
+        "shardulm94.trailing-spaces",
+        "pkief.material-icon-theme",
+        "formulahendry.dotnet-test-explorer",
+        "fernandoescolar.vscode-solution-explorer",
+        "eamodio.gitlens",
+        "shd101wyy.markdown-preview-enhanced"
+    ],
+    "settings": {
+        "editor.fontFamily": "Fira Code",
+        "editor.fontSize": 14,
+        "workbench.iconTheme": "material-icon-theme",
+        "atomKeymap.promptV3Features": true,
+        "editor.formatOnPaste": true,
+        "editor.rulers": [
+            80,
+            {
+                "column": 120,
+                "color": "#ff0000"
+            }
+        ],
+        "editor.fontLigatures": true,
+        "trailing-spaces.trimOnSave": true,
+        "csharp.format.enable": true,
+    }
+}

@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+    application:
+        build:
+            args:
+                - VARIANT=dev-6.0
+                # - NODE_VERSION=lts/*
+                # - INSTALL_AZURE_CLI=true
+            context: .
+        volumes:
+            - ./src:/workspace:delegated
+        
+        command: sleep infinity
