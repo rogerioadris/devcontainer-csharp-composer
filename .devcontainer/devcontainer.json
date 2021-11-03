@@ -4,9 +4,16 @@
     "service": "application",
     "workspaceFolder": "/workspace",
     "shutdownAction": "stopCompose",
+    "remoteUser": "vscode",
+    "forwardPorts": [
+        7610,
+        5000,
+        5001
+    ],
     "extensions": [
         "ms-dotnettools.csharp",
         "ms-vscode.atom-keybindings",
+        "josefpihrt-vscode.roslynator",
         "jchannon.csharpextensions",
         "jmrog.vscode-nuget-package-manager",
         "shardulm94.trailing-spaces",
@@ -14,6 +21,7 @@
         "formulahendry.dotnet-test-explorer",
         "fernandoescolar.vscode-solution-explorer",
         "eamodio.gitlens",
+        "ms-vscode.powershell",
         "shd101wyy.markdown-preview-enhanced"
     ],
     "settings": {

@@ -10,5 +10,19 @@ services:
             context: .
         volumes:
             - ./src:/workspace:delegated
-        
-        command: sleep infinity
+            - ./.devcontainer/init.ps1:/opt/init.ps1:cached
+        env_file:
+            - .env
+        depends_on:
+            - database
+        command: >
+            bash -c "pwsh /opt/init.ps1 && sleep infinity"
+
+    database:
+        image: mcr.microsoft.com/mssql/server:2019-latest
+        env_file:
+            - .env
+        environment:
+            - ACCEPT_EULA=Y
+        ports:
+            - 7610:1433
