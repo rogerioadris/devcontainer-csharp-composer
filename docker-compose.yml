@@ -24,5 +24,9 @@ services:
             - .env
         environment:
             - ACCEPT_EULA=Y
+        volumes:
+            - ./db/data:/var/opt/mssql/data
+            - ./db/log:/var/opt/mssql/log
+            - ./db/secrets:/var/opt/mssql/secrets
         ports:
             - 7610:1433

@@ -2,7 +2,7 @@
 # Additional steps to initialize the development container
 
 # Install sqlserver module so we can use 'Invoke-Sqlcmd'
-Install-Module sqlserver -Confirm:$False  -Force
+Install-Module -Name SqlServer -Confirm:$False  -Force
 
 # Create new database
 # Source for the retry logic:
